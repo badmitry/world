@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="@dimen/dp_4"
+    android:layout_marginVertical="@dimen/dp_4"
+    app:cardCornerRadius="@dimen/dp_16"
+    app:cardElevation="@dimen/dp_16">
+
+    <TextView
+        android:id="@+id/tvWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp_4"
+        android:gravity="center"
+        android:theme="@style/name"
+        tools:text="@string/home_animals_cow" />
+</com.google.android.material.card.MaterialCardView>

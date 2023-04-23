@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //Fruit region
+    <string name="fruit">Фрукты и овощи</string>
+    <string name="fruit_apple">Яблоко</string>
+    <string name="fruit_banana">Банан</string>
+    <string name="fruit_orange">Апельсин</string>
+    <string name="fruit_plum">Слива</string>
+    <string name="fruit_lemon">Лимон</string>
+    <string name="fruit_pear">Груша</string>
+    <string name="fruit_cucumber">Огурец</string>
+    <string name="fruit_tomato">Помидор</string>
+    <string name="fruit_onion">Лук</string>
+    //end region
+    //Home animal region
+    <string name="home_animals">Домашние животные</string>
+    <string name="home_animals_cow">Корова</string>
+    <string name="home_animals_pig">Свинья</string>
+    <string name="home_animals_goat">Коза</string>
+    <string name="home_animals_sheep">Овца</string>
+    <string name="home_animals_dog">Собака</string>
+    <string name="home_animals_cat">Кошка</string>
+    //end region
+    //Number region
+    <string name="number">Цифры</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="number_ten">10</string>
+    //end region
+    //Colors region
+    <string name="colors">Цвета</string>
+    <string name="colors_blue">Синий</string>
+    <string name="colors_brown">Коричневый</string>
+    <string name="colors_green">Зелёный</string>
+    <string name="colors_orange">Оранжевый</string>
+    <string name="colors_purple">Фиолетовый</string>
+    <string name="colors_red">Красный</string>
+    <string name="colors_yellow">Жёлтый</string>
+    //end region
+    //Clothes region
+    <string name="clothes">Одежда</string>
+    <string name="clothes_socks">Носки</string>
+    <string name="clothes_hat">Шапка</string>
+    <string name="clothes_sweater">Кофта</string>
+    <string name="clothes_pants">Штаны</string>
+    <string name="clothes_jacket">Куртка</string>
+    //end region
+</resources>
