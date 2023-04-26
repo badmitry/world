@@ -23,6 +23,8 @@ class FragmentFind : Fragment(), Screen {
         return@lazy MainCategories.values().getOrNull(categoryId)?.entityList
     }
 
+    private var handlerAvailable = true
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -48,14 +50,18 @@ class FragmentFind : Fragment(), Screen {
     }
 
     private fun goToNextElement() {
-        Handler(Looper.getMainLooper()).postDelayed({
-            val currentItemNumber = binding.vpLayout.currentItem
-            if (currentItemNumber < (entityList?.count() ?: 0) - 1) {
-                binding.vpLayout.setCurrentItem(currentItemNumber + 1, false)
-            } else {
-                requireActivity().onBackPressedDispatcher.onBackPressed()
-            }
-        }, 1000)
+        if (handlerAvailable) {
+            handlerAvailable = false
+            Handler(Looper.getMainLooper()).postDelayed({
+                val currentItemNumber = binding.vpLayout.currentItem
+                if (currentItemNumber < (entityList?.count() ?: 0) - 1) {
+                    binding.vpLayout.setCurrentItem(currentItemNumber + 1, false)
+                } else {
+                    requireActivity().onBackPressedDispatcher.onBackPressed()
+                }
+                handlerAvailable = true
+            }, 1000)
+        }
     }
 
     companion object {

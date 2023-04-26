@@ -52,4 +52,24 @@
     <string name="clothes_pants">Штаны</string>
     <string name="clothes_jacket">Куртка</string>
     //end region
+    //Crockery region
+    <string name="crockery">Посуда</string>
+    <string name="crockery_cup">Чашка</string>
+    <string name="crockery_spoon">Ложка</string>
+    <string name="crockery_plate">Тарелка</string>
+    <string name="crockery_fork">Вилка</string>
+    <string name="crockery_pot">Кастрюля</string>
+    <string name="crockery_knife">Нож</string>
+    //end region
+    //AirTransport region
+    <string name="air_transport">Воздушный транспорт</string>
+    <string name="air_transport_plain">Самолет</string>
+    <string name="air_transport_helicopter">Вертолет</string>
+    <string name="air_transport_fighter">Истребитель</string>
+    <string name="air_transport_balloon">Воздушный шар</string>
+    <string name="air_transport_parachute">Парашют</string>
+    <string name="air_transport_glider">Планер</string>
+    <string name="air_transport_rocket">Ракета</string>
+    <string name="air_transport_biplane">Биплан</string>
+    //end region
 </resources>
