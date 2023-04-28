@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'ru.badmitry.resources'
     compileSdk 33
 
     defaultConfig {
@@ -15,8 +16,13 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
+            debuggable true
+        }
+        release {
+            minifyEnabled true
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
