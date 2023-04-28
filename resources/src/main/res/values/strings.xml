@@ -72,4 +72,21 @@
     <string name="air_transport_rocket">Ракета</string>
     <string name="air_transport_biplane">Биплан</string>
     //end region
+    //toys region
+    <string name="toys">Игрушки</string>
+    <string name="toys_ball">Мяч</string>
+    <string name="toys_home">Дом</string>
+    <string name="toys_cube">Кубик</string>
+    <string name="toys_doll">Кукла</string>
+    <string name="toys_shovel">Лопата</string>
+    <string name="toys_balloon">Шар</string>
+    //end region
+    //furniture region
+    <string name="furniture">Мебель</string>
+    <string name="furniture_cupboard">Шкаф</string>
+    <string name="furniture_table">Стол</string>
+    <string name="furniture_chair">Стул</string>
+    <string name="furniture_bed">Кровать</string>
+    <string name="furniture_sofa">Диван</string>
+    //end region
 </resources>
