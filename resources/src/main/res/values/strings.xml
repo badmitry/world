@@ -89,4 +89,13 @@
     <string name="furniture_bed">Кровать</string>
     <string name="furniture_sofa">Диван</string>
     //end region
+    //insect region
+    <string name="insect">Насекомые</string>
+    <string name="insect_wasp">Оса</string>
+    <string name="insect_spider">Паук</string>
+    <string name="insect_bug">Жук</string>
+    <string name="insect_fly">Муха</string>
+    <string name="insect_butterfly">Бабочка</string>
+    <string name="insect_mosquito">Комар</string>
+    //end region
 </resources>
