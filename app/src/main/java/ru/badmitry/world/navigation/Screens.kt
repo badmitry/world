@@ -8,7 +8,7 @@ object Screens {
         FragmentMain()
     }
 
-    fun selectScreen(task: Tasks) = FragmentScreen {
+    fun selectScreen(task: WorldTasks) = FragmentScreen {
         FragmentSelectCategories.newInstance(task.ordinal)
     }
 

@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import ru.badmitry.world.databinding.RvItemMainBinding
-import ru.badmitry.world.navigation.Tasks
+import ru.badmitry.world.navigation.WorldTasks
 import ru.badmitry.world.viewmodels.MainFragmentViewModel
 
 class MainRVAdapter(
@@ -16,7 +16,7 @@ class MainRVAdapter(
 
     inner class ViewHolder(private val binding: RvItemMainBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(task: Tasks) {
+        fun bind(task: WorldTasks) {
             binding.title.text = context.getString(task.taskNameId)
             binding.item.setOnClickListener {
                 viewModel.onItemClick(task)
@@ -31,10 +31,10 @@ class MainRVAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(Tasks.values()[position])
+        holder.bind(WorldTasks.values()[position])
     }
 
     override fun getItemCount(): Int {
-        return Tasks.values().size
+        return WorldTasks.values().size
     }
 }

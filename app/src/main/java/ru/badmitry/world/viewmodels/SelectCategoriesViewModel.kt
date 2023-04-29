@@ -5,7 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import com.github.terrakok.cicerone.Router
 import ru.badmitry.world.navigation.Screens
-import ru.badmitry.world.navigation.Tasks
+import ru.badmitry.world.navigation.WorldTasks
 import javax.inject.Inject
 
 class SelectCategoriesViewModel @Inject constructor(
@@ -13,17 +13,17 @@ class SelectCategoriesViewModel @Inject constructor(
     app: Application
 ) : AndroidViewModel(app) {
     val titleLiveData: MutableLiveData<Int> = MutableLiveData()
-    private var task = Tasks.LEARN
+    private var task = WorldTasks.LEARN
     fun setTask(taskId: Int) {
-        task = Tasks.values().findLast { it.ordinal == taskId } ?: Tasks.LEARN
+        task = WorldTasks.values().findLast { it.ordinal == taskId } ?: WorldTasks.LEARN
         titleLiveData.postValue(task.taskNameId)
     }
 
     fun onItemClick(id: Int) {
         when (task) {
-            Tasks.LEARN -> router.navigateTo(Screens.learnScreen(id))
-            Tasks.WRITE -> router.navigateTo(Screens.writeScreen(id))
-            Tasks.FIND -> router.navigateTo(Screens.findScreen(id))
+            WorldTasks.LEARN -> router.navigateTo(Screens.learnScreen(id))
+            WorldTasks.WRITE -> router.navigateTo(Screens.writeScreen(id))
+            WorldTasks.FIND -> router.navigateTo(Screens.findScreen(id))
         }
     }
 }
