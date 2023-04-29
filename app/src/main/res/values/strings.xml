@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">карточки</string>
+    <string name="app_name">карточки для детей</string>
     <string name="task_learn">изучение слов</string>
     <string name="task_write">составление слов</string>
     <string name="task_find">поиск слов</string>
