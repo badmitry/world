@@ -1,5 +1,6 @@
 package ru.badmitry.world
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.lifecycle.ViewModelProvider
@@ -18,6 +19,7 @@ class MainActivity : DaggerAppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         viewModel = ViewModelProvider(this, vmFactory)[MainViewModel::class.java]
