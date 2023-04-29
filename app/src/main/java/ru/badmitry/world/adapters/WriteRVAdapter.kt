@@ -18,13 +18,16 @@ class WriteRVAdapter(
 
     inner class ViewHolder(private val binding: RvItemWriteBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        var text = ""
+        private var adapter = LettersRVAdapter(context, ::onLetterClick)
+        private var text = ""
+        private var listEntity = mutableListOf<Char>()
         var mediaPlayerName: MediaPlayer? = null
         fun bind(entity: Entity) {
             text = context.getString(entity.nameResId).uppercase()
-            val listEntity = text.uppercase().map { it }.distinct().shuffled()
+            listEntity = text.uppercase().map { it }.shuffled().toMutableList()
             mediaPlayerName = MediaPlayer.create(context, entity.nameSoundResId)
             binding.title.text = ""
+            binding.titleStatic.text = text
             binding.image.setImageDrawable(context.getDrawable(entity.imageResId))
             binding.image.setOnClickListener {
                 mediaPlayerName?.start()
@@ -35,14 +38,17 @@ class WriteRVAdapter(
             binding.run {
                 rvLetter.layoutManager =
                     GridLayoutManager(context, 5)
-                rvLetter.adapter =
-                    LettersRVAdapter(context, ::onLetterClick, listEntity)
+                rvLetter.adapter = adapter
+                adapter.submitList(listEntity)
             }
         }
 
-        private fun onLetterClick(letter: Char) {
+        private fun onLetterClick(index: Int) {
             val currentText = binding.title.text
+            val letter = listEntity.getOrNull(index)
             if (letter == text.getOrNull(currentText.length)) {
+                listEntity.removeAt(index)
+                adapter.submitList(listEntity)
                 binding.title.text = "$currentText$letter"
                 if (binding.title.text.length == text.length) {
                     mediaPlayerName?.start()

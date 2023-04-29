@@ -8,17 +8,22 @@ import ru.badmitry.world.databinding.RvItemLetterBinding
 
 class LettersRVAdapter(
     private val context: Context,
-    private val action: (text: Char) -> Unit,
-    private val letters: List<Char>,
+    private val action: (index: Int) -> Unit
 ) : RecyclerView.Adapter<LettersRVAdapter.ViewHolder>() {
     private lateinit var adapterBinding: RvItemLetterBinding
+    private var letters: List<Char> = emptyList()
+    fun submitList(listLetters: List<Char>) {
+        letters = listLetters
+        notifyDataSetChanged()
+    }
 
     inner class ViewHolder(private val binding: RvItemLetterBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(letter: Char) {
+        fun bind(position: Int) {
+            val letter = letters.getOrNull(position)
             binding.tvLetter.text = letter.toString()
             binding.item.setOnClickListener {
-                action.invoke(letter)
+                action.invoke(position)
             }
         }
     }
@@ -30,7 +35,7 @@ class LettersRVAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(letters[position])
+        holder.bind(position)
     }
 
     override fun getItemCount(): Int {
