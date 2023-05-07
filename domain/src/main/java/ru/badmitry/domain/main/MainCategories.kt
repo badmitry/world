@@ -14,5 +14,6 @@ enum class MainCategories(val entityList: List<Entity>, val imageRes: Int, val c
     AIR_TRANSPORT(AirTransportList.entities, R.drawable.air_transprt_plain, R.string.air_transport),
     TOYS(ToysList.entities, R.drawable.toys_balloon, R.string.toys),
     Furniture(FurnitureList.entities, R.drawable.furniture_chair, R.string.furniture),
-    INSECT(InsectList.entities, R.drawable.insect_fly, R.string.insect)
+    INSECT(InsectList.entities, R.drawable.insect_fly, R.string.insect),
+    PROFESSIONS(ProfessionsList.entities, R.drawable.profession_cook, R.string.profession),
 }

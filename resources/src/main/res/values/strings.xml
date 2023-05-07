@@ -98,4 +98,20 @@
     <string name="insect_butterfly">Бабочка</string>
     <string name="insect_mosquito">Комар</string>
     //end region
+    //proffession region
+    <string name="profession">Профессии</string>
+    <string name="profession_nanny_vasilia">няня тётя василя</string>
+    <string name="profession_nanny_feeds">няня кормит</string>
+    <string name="profession_nanny_clean">няня моет тарелку</string>
+    <string name="profession_nanny_work">няня работает</string>
+    <string name="profession_cook">повар</string>
+    <string name="profession_cook_soup">повар варит суп</string>
+    <string name="profession_cook_work">повар работает</string>
+    <string name="profession_chauffeur_working">шофёр работает</string>
+    <string name="profession_chauffeur_driving">шофёр едет на машине</string>
+    <string name="profession_doctor_heals">доктор лечит</string>
+    <string name="profession_doctor_hear">доктор слушает</string>
+    <string name="profession_doctor_see">доктор смотрит</string>
+    <string name="profession_doctor_work">доктор работает</string>
+    //end region
 </resources>
