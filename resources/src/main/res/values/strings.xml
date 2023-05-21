@@ -115,7 +115,7 @@
     <string name="profession_doctor_work">доктор работает</string>
     //end region
     //flowers region
-    <string name="flowers">Насекомые</string>
+    <string name="flowers">Цветы</string>
     <string name="flowers_chamomile">Ромашка</string>
     <string name="flowers_dandelion">Одуванчик</string>
     <string name="flowers_poppy">Мак</string>
