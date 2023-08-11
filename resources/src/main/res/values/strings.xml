@@ -121,4 +121,19 @@
     <string name="flowers_poppy">Мак</string>
     <string name="flowers_rose">Роза</string>
     //end region
+    //flowers body
+    <string name="body">Части тела</string>
+    <string name="body_head">Голова</string>
+    <string name="body_nose">Нос</string>
+    <string name="body_eye">Глаза</string>
+    <string name="body_mouth">Рот</string>
+    <string name="body_brows">Брови</string>
+    <string name="body_years">Уши</string>
+    <string name="body_heands">Кисти</string>
+    <string name="body_arm">Рука</string>
+    <string name="body_legs">Ноги</string>
+    <string name="body_knees">Колени</string>
+    <string name="body_as">Попа</string>
+    <string name="body_back">Спина</string>
+    //end region
 </resources>

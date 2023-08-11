@@ -17,4 +17,5 @@ enum class MainCategories(val entityList: List<Entity>, val imageRes: Int, val c
     INSECT(InsectList.entities, R.drawable.insect_fly, R.string.insect),
     PROFESSIONS(ProfessionsList.entities, R.drawable.profession_cook, R.string.profession),
     FLOWERS(FlowersList.entities, R.drawable.flowers_chamomile, R.string.flowers),
+    BODY(BodyList.entities, R.drawable.body_eye, R.string.body),
 }
