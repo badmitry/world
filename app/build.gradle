@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "ru.badmitry.world"
         minSdk 21
-        targetSdk 33
-        versionCode 5
-        versionName "5.0"
+        targetSdk 34
+        versionCode 7
+        versionName "5.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -49,7 +49,7 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
@@ -63,6 +63,9 @@ dependencies {
 
 //Cicerone
     implementation("com.github.terrakok:cicerone:7.1")
+
+    //AppMetrica
+    implementation 'com.yandex.android:mobmetricalib:5.3.0'
 
     implementation project(':resources')
     implementation project(':domain')
