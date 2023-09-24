@@ -30,5 +30,15 @@ object ClothesList {
             imageResId = R.drawable.clothes_pants,
             nameSoundResId = R.raw.clothes_pants,
         ),
+        Entity(
+            nameResId = R.string.clothes_shirt,
+            imageResId = R.drawable.clothes_shirt,
+            nameSoundResId = R.raw.clothes_shirt,
+        ),
+        Entity(
+            nameResId = R.string.clothes_pants,
+            imageResId = R.drawable.clothes_pants,
+            nameSoundResId = R.raw.clothes_pants,
+        ),
     )
 }

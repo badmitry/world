@@ -12,6 +12,12 @@ object HomeAnimalList {
             soundResId = R.raw.home_animal_cow_sound
         ),
         Entity(
+            nameResId  =R.string.home_animals_horse,
+            imageResId = R.drawable.home_animal_horse,
+            nameSoundResId = R.raw.home_animal_horse_name,
+            soundResId = R.raw.home_animal_horse_sound
+        ),
+        Entity(
             nameResId = R.string.home_animals_pig,
             imageResId = R.drawable.home_animal_pig,
             nameSoundResId = R.raw.home_animal_pig_name,

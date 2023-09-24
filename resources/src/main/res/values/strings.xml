@@ -15,6 +15,7 @@
     //Home animal region
     <string name="home_animals">Домашние животные</string>
     <string name="home_animals_cow">Корова</string>
+    <string name="home_animals_horse">Лошадь</string>
     <string name="home_animals_pig">Свинья</string>
     <string name="home_animals_goat">Коза</string>
     <string name="home_animals_sheep">Овца</string>
@@ -50,6 +51,7 @@
     <string name="clothes_hat">Шапка</string>
     <string name="clothes_sweater">Кофта</string>
     <string name="clothes_pants">Штаны</string>
+    <string name="clothes_shirt">Футболка</string>
     <string name="clothes_jacket">Куртка</string>
     //end region
     //Crockery region
