@@ -22,6 +22,15 @@
     <string name="home_animals_dog">Собака</string>
     <string name="home_animals_cat">Кошка</string>
     //end region
+    //Forex animal region
+    <string name="forest_animal">Лесные животные</string>
+    <string name="forest_animal_hedgehog">Ёж</string>
+    <string name="forest_animal_fox">Лиса</string>
+    <string name="forest_animal_wolf">Волк</string>
+    <string name="forest_animal_hare">Заяц</string>
+    <string name="forest_animal_squirrel">Белка</string>
+    <string name="forest_animal_bear">Медведь</string>
+    //end region
     //Number region
     <string name="number">Цифры</string>
     <string name="number_one">1</string>

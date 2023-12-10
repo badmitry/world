@@ -6,6 +6,7 @@ import ru.badmitry.resources.R
 
 enum class MainCategories(val entityList: List<Entity>, val imageRes: Int, val cardNameRes: Int) {
     HOME_ANIMALS(HomeAnimalList.entities,  R.drawable.home_animal_cow, R.string.home_animals),
+    FOREST_ANIMALS(ForexAnimalList.entities, R.drawable.forest_animal_bear, R.string.forest_animal),
     VEGETABLE_FRUIT(FruitList.entities, R.drawable.fruit_apple, R.string.fruit),
     NUMBERS(NumbersList.entities, R.drawable.number_ten, R.string.number),
     COLORS(ColorsList.entities, R.drawable.colors_red, R.string.colors),
